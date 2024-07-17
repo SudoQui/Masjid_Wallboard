@@ -1,0 +1,74 @@
+body {
+    font-family: 'Arial, sans-serif';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: url('BG.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #cc9900;
+}
+
+.top-left {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    text-align: left;
+}
+
+.top-left #current-prayer, .top-left #next-prayer {
+    font-size: 28px;
+    font-weight: bold;
+    color: black;
+}
+
+.center {
+    margin-top: 50px;
+    text-align: center;
+}
+
+#current-time {
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+
+#gregorian-date, #islamic-date {
+    font-size: 28px;
+    margin: 10px 0;
+}
+
+.bottom {
+    margin-top: 50px;
+    width: 100%;
+}
+
+.prayer-times {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.prayer-times div {
+    width: 80%;
+    padding: 14px;
+    background: #006600;
+    color: #cc9900;
+    margin: 7px 0;
+    border-radius: 5px;
+    font-size: 28px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.prayer-times div span {
+    flex: 1;
+    text-align: center;
+}
+
+.prayer-times div.active {
+    background: #004d00;
+}
